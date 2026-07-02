@@ -150,11 +150,6 @@ int main() {
         of << height <<std::endl;
         of << block_hash << std::endl;
         of.close();
-
-        // TODO: implement the capstone workflow described above and write out.txt.
-        (void)client;
-        std::cerr << "Not implemented yet.\n";
-        exit_code = 1;
     } catch (const std::exception& e) {
         std::cerr << "Error occurred: " << e.what() << "\n";
         exit_code = 1;
